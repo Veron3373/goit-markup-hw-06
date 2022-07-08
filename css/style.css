@@ -620,7 +620,7 @@ margin-right: 30px;
   width: 358px;
   height: 50px;
 
-  padding: 15px 0px 15px 16px;
+  padding: 15px 16px;
 
   
   font-family: 'Roboto';
@@ -972,26 +972,46 @@ margin-right: 30px;
 
 }
 
-.backdrop.is-hidden{
+  .backdrop.is-hidden{
   opacity: 0;
   pointer-events: none;
 } 
 
-.checkbox-label{
-  -webkit-appearance: none;
-  -moz-appearance: none;
+
+.consent-consent-mail-checkbox {
+  display: inline-block;
+
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid #212121;
+
+  border-radius: 4px;
+  margin-right: 7px;
+
+  transition: border-color
+  var(--transition-timing-function),
+  background-color var(--transition-timing-function);
+}
+
+.consent-checkbox:checked + .consent-consent-mail-checkbox {
+  border-color: transparent;
+
+  background-color: var(--accent-color);
+  background-image: url(../img/check.svg);
+
+  background-size: contain;
+  background-origin: border-box;
+
+  border: 2px solid var(--accent-color);
 
 }
 
-/* .consent-consent-mail-text {
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    border: 2px solid #212121;
-    border-radius: 4px;
-    margin-right: 7px;
-    transition: border-color var(--accent-color), background-color var(--accent-color), background-image var(--accent-color);
-} */
+.consent-checkbox:hover + .consent-consent-mail-checkbox {
+
+  border: 2px solid var(--accent-color);
+
+}
 
 .modal{
   position: absolute;
@@ -1109,14 +1129,16 @@ margin-right: 30px;
 
 }
 
-.register-form-user:hover .register-position-input,
+.register-form-user:checked .register-position-input,
 .register-form-user:focus-within .register-position-input {
   border-color: var(--accent-color);
   outline: 0;
+
 }
-.register-form-user:hover .register-btn-person,
+.register-form-user:checked .register-btn-person,
 .register-form-user:focus-within .register-btn-person {
   fill: var(--accent-color);
+
 }
 
 
@@ -1158,9 +1180,11 @@ margin-right: 30px;
   border: var(  --color-register-position-input);
   border-radius: 4px;
 
-  transition: border-color var(--transition-timing-function);
+  transition: border-color var(--transition-timing-function),
 
-  padding: 12px 0px 12px 42px;
+  fill var(--transition-timing-function);
+  
+  padding: 12px 12px 12px 42px;
 
   
 }
@@ -1185,11 +1209,18 @@ margin-right: 30px;
 
   color: var(--primary-text-color);
 
+  margin-top: 20px;
+
+
+  user-select: none;
 }
 
 .consent-mail{
-  color: var(--accent-color);
   position: relative;
+
+  color: var(--accent-color);
+
+  margin-left: 6px;
 }
 
 .consent-mail::after{
@@ -1203,16 +1234,9 @@ margin-right: 30px;
   height: 0.7px;
 
   left: 0;
-  bottom: 0;
+  bottom: -10;
 
   background-color: currentColor;
-
-}
-
-.consent{
-  position: relative;
-
-  margin-top: 20px;
 
 }
 
@@ -1226,16 +1250,26 @@ margin-right: 30px;
 }
 
 .consent-btn-svg{
-  position: absolute;
+  align-items: center;
 
-  transform: translateX(-203.5px); 
+  background-color:var(--button-hero-two);
+  border-radius: 2px;
+
+  background-image: url(../img/check.svg);
+
 }
 
-/* .modal-btn-use{
-  fill: red;
-} */
-.consent-consent-mail-text{
-  margin-left: 7px;
+.consent-checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .modal-btn-submit{

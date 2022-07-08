@@ -424,38 +424,27 @@
         </label>
         <label class="register-form-user">
           <span class="register-position">Почта</span>
-          <input class="register-position-input" мtype="email" name="user-name-email" pattern=".+@globex\.com" size="30"
+          <input class="register-position-input" type="email" name="user-name-email" pattern=".+@globex\.com" size="30"
             required>
           <svg class="register-btn-person">
             <use class="modal-btn-use" href="./images/icons.svg#icon-e-mail"></use>
           </svg>
         </label>
-
         <label class="register-form-user coments">
           <span class="register-position">Комментарий</span>
           <textarea class="coments register-position-input" name="user-name-text"
             placeholder="Введите текст"></textarea>
         </label>
-
-        <div class="consent">
-          <label class="consent-user">
-
-            <svg class="consent-btn-svg" width="16px" height="15px">
-              <use class="modal-btn-use" href="./images/icons.svg#icon-icon-check"></use>
-            </svg>
-            <input type="checkbox">
-            <span class="consent-consent-mail-text">Соглашаюсь с рассылкой и принимаю <a class="consent-mail"
-                href="https://goit.ua/agreement/" target="blank" rel="noopener noreferrer">Условия договора</a></span>
-          </label>
-        </div>
-
-
+        <label class="consent-user">
+          <input class="consent-checkbox" type="checkbox" name="policy" value="policy">
+          <span class="consent-consent-mail-checkbox"></span>Соглашаюсь с рассылкой и принимаю
+          <a class="consent-mail" href="https://goit.ua/agreement/" target="blank" rel="noopener noreferrer">Условия
+            договора</a>
+        </label>
         <button class="modal-btn-submit" type="submit">
           <span class="modal-btn-submit-send">Отправить</span>
         </button>
-
       </form>
-
     </div>
   </div>
 
