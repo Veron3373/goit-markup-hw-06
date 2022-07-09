@@ -1129,6 +1129,8 @@ margin-right: 30px;
   display: flex;
   position: relative;
 
+  
+
 }
 
 .register-form-user:checked .register-position-input,
@@ -1262,6 +1264,8 @@ margin-right: 30px;
   
   padding: 12px 12px 12px 42px;
 
+  display: flex;
+
   
 }
 
@@ -1319,15 +1323,16 @@ margin-right: 30px;
 .register-btn-person{
   position: absolute;
 
-  width: 18px;
-  height: 18px;
+  /* width: 18px;
+  height: 18px; */
 
   left: 12px;
   top: 50%;
 
   transform: translateY(-50%);
 
-  padding-left:3px;
+  transition: fill var(--accent-colorn);
+
 }
 
 
