@@ -411,44 +411,32 @@
         <label class="register-form-user">
           <span class="register-position">Имя</span>
           <input class="register-position-input" type="text" name="user-name" minlength="3" required>
-            <svg class="register-btn-person">
-              <use class="modal-btn-use" width="12px" hidden="12px" href="./images/icons.svg#icon-man"></use>
-            </svg>
-          <!--! --------------------------------- -->
+          <svg class="register-btn-person">
+            <use class="modal-btn-use" width="12px" height="12px" href="./images/icons.svg#icon-man"></use>
+          </svg>
           <span class="register-eror-text">Минимальная длина 3-символа</span>
           <svg class="register-btn-eror-no-eror">
             <use class="modal-btn-eror" href="./img/icons.svg#icon-eror"></use>
             <use class="modal-btn-no-eror" href="./img/icons.svg#icon-no-eror"></use>
           </svg>
-          <!--! --------------------------------- -->
         </label>
         <label class="register-form-user">
           <span class="register-position">Телефон</span>
-          <input class="register-position-input" type="tel" name="user-name-tel" minlength="3" required>
+          <input class="register-position-input" id="user-name-tel" type="tel" name="user-name-tel" required>
           <svg class="register-btn-person">
-            <use class="modal-btn-use" width="13px" hidden="13px" href="./images/icons.svg#icon-phone-2"></use>
+            <use class="modal-btn-use" width="13px" height="13px" href="./images/icons.svg#icon-phone-2"></use>
           </svg>
-          <!--! --------------------------------- -->
-          <span class="register-eror-text">Минимальная длина 3-символа</span>
           <svg class="register-btn-eror-no-eror">
             <use class="modal-btn-eror" href="./img/icons.svg#icon-eror"></use>
             <use class="modal-btn-no-eror" href="./img/icons.svg#icon-no-eror"></use>
           </svg>
-          <!--! --------------------------------- -->
         </label>
         <label class="register-form-user">
           <span class="register-position">Почта</span>
           <input class="register-position-input" type="email" name="user-name-email" minlength="3" required>
           <svg class="register-btn-person">
-            <use class="modal-btn-use" width="15px" hidden="12px" href="./images/icons.svg#icon-e-mail"></use>
+            <use class="modal-btn-use" width="15px" height="12px" href="./images/icons.svg#icon-e-mail"></use>
           </svg>
-          <!--! --------------------------------- -->
-          <span class="register-eror-text">Минимальная длина 3-символа</span>
-          <svg class="register-btn-eror-no-eror">
-            <use class="modal-btn-eror" href="./img/icons.svg#icon-eror"></use>
-            <use class="modal-btn-no-eror" href="./img/icons.svg#icon-no-eror"></use>
-          </svg>
-          <!--! --------------------------------- -->
         </label>
         <label class="register-form-user coments">
           <span class="register-position">Комментарий</span>
@@ -468,8 +456,15 @@
     </div>
   </div>
 
-
+  <!-- JavaScript-Start -->
   <script src="./js/modal.js"></script>
+  <!-- Input-mask -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/inputmask/inputmask.min.js"
+    integrity="sha512-DVfS/GbZzLMmxBL/CW92N84eHP2Fq9d+r9RKbvctcvzISVfu+WvD+MCvbK9j8I6nVLrntGo3UUVrNFUDX0ukBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/iput-mask.js"></script>
 </body>
 
 </html>
