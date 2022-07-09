@@ -972,10 +972,10 @@ margin-right: 30px;
 
 }
 
-  /* .backdrop.is-hidden{
+  .backdrop.is-hidden{
   opacity: 0;
   pointer-events: none;
-}  */
+} 
 
 
 .consent-consent-mail-checkbox {
