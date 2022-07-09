@@ -972,10 +972,10 @@ margin-right: 30px;
 
 }
 
-  .backdrop.is-hidden{
+  /* .backdrop.is-hidden{
   opacity: 0;
   pointer-events: none;
-} 
+}  */
 
 
 .consent-consent-mail-checkbox {
@@ -1062,8 +1062,6 @@ margin-right: 30px;
   right: 8px;
   top: 8px;
   
-
-
   backface-visibility: hidden;
 
   cursor: pointer;
@@ -1161,7 +1159,6 @@ margin-right: 30px;
 }
 
 .register-position{
-  
   width: 100%;
 
   font-family: 'Roboto';
@@ -1176,6 +1173,77 @@ margin-right: 30px;
   transform: translateY(-120%);
 
 }
+/* !------------------------------------- */
+.register-eror-text,
+.register-btn-eror-no-eror {
+  display: block;
+  position: absolute;
+}
+
+.register-position-input:focus:invalid ~ .register-eror-text,
+.register-position-input:focus:invalid ~ .register-btn-eror-no-eror > .modal-btn-eror{
+  opacity: 1;
+}
+
+.register-position-input:valid ~ .register-btn-eror-no-eror > .modal-btn-no-eror{
+  opacity: 1;
+}
+
+.register-eror-text{
+
+  right: 70px;
+  bottom: -13px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: red;
+  opacity: 0;
+
+  transition: color var(--transition-timing-function);
+}
+
+.register-btn-eror-no-eror{
+  width: 15px;
+  height: 15px;
+
+  right: 10px;
+  bottom: 13px;
+
+}
+
+.modal-btn-eror{
+  width: 15px;
+  height: 15px;
+
+  right: 10px;
+  bottom: 13px;
+
+  fill: red;
+  opacity: 0;
+
+  transition: fill var(--transition-timing-function);
+}
+
+.modal-btn-no-eror{
+  width: 15px;
+  height: 15px;
+
+  right: 10px;
+  bottom: 13px;
+
+  fill: rgb(95, 212, 41);
+  opacity: 0;
+
+  transition: fill var(--transition-timing-function);
+}
+
+/* !------------------------------------- */
+
 
 .register-position-input{
   width: 100%;
